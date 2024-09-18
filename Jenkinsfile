@@ -11,6 +11,11 @@ pipeline {
             sh 'echo test'
         }
        }
+       stage('trigger'){
+        steps{
+            sh 'echo trigger'
+        }
+       }
      } 
 
 
