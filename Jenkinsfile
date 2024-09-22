@@ -4,7 +4,7 @@ pipeline {
         branch_name = 'main'
         GIT_URL = 'https://github.com/rourobagna/awscicd.git'
         IMAGE_TAG = 'rourobagna/awscicd'
-        IMAGE_VERSION = ${BUILD_NUMBER}
+        IMAGE_VERSION = "${BUILD_NUMBER}"
     }
      stages {
        stage('git checkout'){
